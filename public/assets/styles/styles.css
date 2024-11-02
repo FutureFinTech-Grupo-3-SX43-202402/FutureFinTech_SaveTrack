@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #576089;
+    overflow-x: hidden;  /*Nuevo*/
+}
+
+/*Sección barra - Completado*/
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(66, 78, 125, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(66, 78, 125, .2);
+    z-index: 10;
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(66, 78, 125, .4),transparent);
+    transition: 0.5s;
+
+}
+
+.header:hover::before{
+    left: 100%;
+}
+
+.logo{
+    color: #FCCA6B;
+    font-family: Cinzel Decorative;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a{
+    color: #FCCA6B;
+    font-family: JetBrains Mono;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    color: #FFA700;
+}
+
+/*Sección Banner - Completado*/
+
+.Banner {
+    width: 100%;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgBanner {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+    object-fit: cover;
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+}
+
+/*Sección Descripciones - Completado*/
+
+.container{
+    padding: 50px 0;
+}
+
+.Subdescription{
+    font-family: JetBrains Mono;
+    text-align: center;
+    color: #FCCA6B;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.wrapper{
+    padding: 10px 10%;
+}
+
+.card_area{
+    display: grid;
+    margin-top: 50px;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card{
+    position: relative;
+    border-radius: 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    height: 800px;
+    padding: 0;
+}
+
+.card img{
+    height: 800px;
+    width: 100%;
+    border-radius: 0;
+    transition: transform 0.5s;
+}
+
+.overlay{
+    height: 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 0;
+    bottom: 0;
+    border-radius: 0;
+    background: linear-gradient(transparent, #1c1c1c 50%);
+    padding: 0px 50px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.overlay h3{
+    color: #FFFFFF;
+    font-family: JetBrains Mono;
+    margin-top: 55%;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.overlay p{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: JetBrains Mono;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.card:hover img{
+    transform: scale(1.2);
+}
+
+.card:hover .overlay{
+    height: 100%;
+}
+
+/*Sección Premium*/
+
+.promocion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.tarjetaPromocion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 0px;
+    width: 100%;
+    max-width: 1522px;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    padding: 40px 20px;
+    flex-direction: row;
+}
+
+.tituloPromocion {
+    font-size: 4vw;
+    max-width: 90%;
+    color: #333333;
+    font-weight: bold;
+    line-height: 1;
+    font-family: JetBrains Mono;
+    text-align: left;
+}
+
+.botonPromocion {
+    padding: 15px 30px;
+    font-size: 1.5vw;
+    color: #FCCA6B;
+    background-color: #424E7D;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: JetBrains Mono;
+    display: block;
+    text-align: center;
+}
+
+.botonPromocion:hover {
+    background-color: #333333;
+}
+
+.iconoPromocion img {
+    width: 30vw;
+    max-width: 700px;
+    height: auto;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .tarjetaPromocion {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .tituloPromocion {
+        font-size: 8vw;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .botonPromocion {
+        font-size: 4vw;
+        margin: 20px 0;
+    }
+
+    .iconoPromocion img {
+        width: 60vw;
+        margin: 20px 0;
+    }
+}
+
+/*Sección footer*/
+
+footer {
+    margin: 50px 0px 0px 0px;
+    background-color: #424E7D;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 2;
+}
+
+.contenido-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contenido-footer div {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 20px;
+}
+
+.contenido-footer div:last-child {
+    margin-right: 0;
+}
+
+.parte-inferior-footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.redes-sociales img {
+    width: 80px;
+    height: 80px;
+    pointer-events: none;
+    cursor: default;
+}
