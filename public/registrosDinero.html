@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaveTrack</title>
+  <link rel="stylesheet" href="assets/styles/registrosDinero.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <a href="" class="logo">SaveTrack</a>
+  <nav class="navbar">
+
+    <div class="notificaciones" id="notificaciones">
+      <div class="notificacion-item">
+        <p>Nueva actualización de objetivos disponible.</p>
+        <span>Hace 5 minutos</span>
+      </div>
+      <div class="notificacion-item">
+        <p>Tu plan de ahorro ha alcanzado el 50% del objetivo.</p>
+        <span>Hace 1 hora</span>
+      </div>
+      <div class="notificacion-item">
+        <p>La sección de finanzas ha sido actualizada.</p>
+        <span>Ayer</span>
+      </div>
+      <div class="notificacion-item">
+        <p>Consulta nuestros nuevos planes de suscripción.</p>
+        <span>Hace 2 días</span>
+      </div>
+    </div>
+
+    <a href="index2.html">Inicio</a>
+    <a href="objetivos.html">Objetivos</a>
+
+    <!-- Ahorro desplegable -->
+    <div class="dropdown">
+      <a href="#" onclick="toggleDropdown()">Ahorro</a>
+      <div class="dropdown-content" id="ahorroDropdown">
+        <a href="datosbancarios.html">Datos Bancarios</a>
+        <a href="registrosDinero.html">Registros</a>
+      </div>
+    </div>
+
+    <!-- Finanzas desplegable -->
+    <div class="dropdown">
+      <a href="#" onclick="toggleDropdown()">Finanzas</a>
+      <div class="dropdown-content" id="finanzasDropdown">
+        <a href="reporteIngresos.html">Reporte de Ingresos</a>
+        <a href="reporteGastos.html">Reporte de Gastos</a>
+      </div>
+    </div>
+
+    <a href="blog.html">Nosotros</a>
+    <a href="ajustes.html"><i class="fas fa-cog"></i></a>
+    <a href="#"><i class="fas fa-bell"></i></a>
+    <a href="informacion.html"><i class="fas fa-user"></i></a>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>Registros</h1>
+  <div class="registros">
+    <div class="registro transferencias">
+      <h2>Transferencias</h2>
+      <div class="registro-item">
+        <p>Banco: BBVA</p>
+        <p>Emisor: Bruno Pérez</p>
+        <p>Número: 1234 5678 9101 1121</p>
+        <p>Monto: S/. 50.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Banco: BCP</p>
+        <p>Emisor: Pedro Sanchez</p>
+        <p>Número: 9876 5432 1098 7654</p>
+        <p>Monto: S/. 20.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Banco: BBVA</p>
+        <p>Emisor: Bruno Pérez</p>
+        <p>Número: 1122 3344 5566 7788</p>
+        <p>Monto: S/. 2500.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Banco: Interbank</p>
+        <p>Emisor: Ana Torres</p>
+        <p>Número: 4321 8765 1234 5678</p>
+        <p>Monto: S/. 150.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Banco: Scotiabank</p>
+        <p>Emisor: Carlos Ramírez</p>
+        <p>Número: 9988 7766 5544 3322</p>
+        <p>Monto: S/. 320.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Banco: BCP</p>
+        <p>Emisor: Laura Mendoza</p>
+        <p>Número: 1122 3344 5566 7788</p>
+        <p>Monto: S/. 45.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Banco: BBVA</p>
+        <p>Emisor: Mario Gutiérrez</p>
+        <p>Número: 5566 7788 9900 1122</p>
+        <p>Monto: S/. 250.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Banco: Interbank</p>
+        <p>Emisor: Rosa Paredes</p>
+        <p>Número: 2233 4455 6677 8899</p>
+        <p>Monto: S/. 89.50</p>
+      </div>
+      <div class="registro-item">
+        <p>Banco: Scotiabank</p>
+        <p>Emisor: Luis Sánchez</p>
+        <p>Número: 9900 8811 7722 6633</p>
+        <p>Monto: S/. 175.75</p>
+      </div>
+      <div class="registro-item">
+        <p>Banco: BCP</p>
+        <p>Emisor: Patricia López</p>
+        <p>Número: 3344 5566 7788 9900</p>
+        <p>Monto: S/. 560.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Banco: BBVA</p>
+        <p>Emisor: Jorge Castillo</p>
+        <p>Número: 5678 1234 4321 8765</p>
+        <p>Monto: S/. 120.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Banco: Interbank</p>
+        <p>Emisor: Carmen Díaz</p>
+        <p>Número: 4455 6677 8899 0011</p>
+        <p>Monto: S/. 300.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Banco: Scotiabank</p>
+        <p>Emisor: Pablo García</p>
+        <p>Número: 7788 9900 1122 3344</p>
+        <p>Monto: S/. 65.00</p>
+      </div>
+    </div>
+
+    <div class="registro gastos">
+      <h2>Gastos</h2>
+      <div class="registro-item">
+        <p>Servicio: Mercado Floral</p>
+        <p>Destinatario: Romina Pérez</p>
+        <p>Número: 9988 7766 5544 3322</p>
+        <p>Monto: S/. 20.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Servicio: SODIMAC</p>
+        <p>Destinatario: Sodimac S.A.</p>
+        <p>Número: 5678 1234 4321 8765</p>
+        <p>Monto: S/. 60.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Servicio: Café Estancia</p>
+        <p>Destinatario: Jorge Teodosio</p>
+        <p>Número: 4455 6677 8899 0011</p>
+        <p>Monto: S/. 45.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Servicio: Delivery Express</p>
+        <p>Destinatario: Carlos López</p>
+        <p>Número: 3344 5566 7788 9900</p>
+        <p>Monto: S/. 35.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Servicio: Electricidad LuzDelSur</p>
+        <p>Destinatario: María Torres</p>
+        <p>Número: 1122 3344 5566 7788</p>
+        <p>Monto: S/. 120.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Servicio: Cablevisión Plus</p>
+        <p>Destinatario: José Ramírez</p>
+        <p>Número: 9988 7766 5544 3322</p>
+        <p>Monto: S/. 85.50</p>
+      </div>
+      <div class="registro-item">
+        <p>Servicio: Agua Sedapal</p>
+        <p>Destinatario: Rosa Pérez</p>
+        <p>Número: 5566 7788 9900 1122</p>
+        <p>Monto: S/. 45.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Servicio: Internet FibraMovil</p>
+        <p>Destinatario: Luis Sánchez</p>
+        <p>Número: 2233 4455 6677 8899</p>
+        <p>Monto: S/. 150.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Servicio: Renta Departamental</p>
+        <p>Destinatario: Paula Gutiérrez</p>
+        <p>Número: 3344 2233 5566 7788</p>
+        <p>Monto: S/. 750.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Servicio: Gas Naturgy</p>
+        <p>Destinatario: Juan Vargas</p>
+        <p>Número: 7788 5566 3344 1122</p>
+        <p>Monto: S/. 68.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Servicio: Televisión Satélite</p>
+        <p>Destinatario: Ana Mendoza</p>
+        <p>Número: 4455 6677 9988 2211</p>
+        <p>Monto: S/. 90.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Servicio: Gimnasio FitLife</p>
+        <p>Destinatario: Pedro Ruiz</p>
+        <p>Número: 6677 2233 4455 8899</p>
+        <p>Monto: S/. 100.00</p>
+      </div>
+      <div class="registro-item">
+        <p>Servicio: Compras TiendaOnline</p>
+        <p>Destinatario: Carmen Díaz</p>
+        <p>Número: 1234 5678 9101 1121</p>
+        <p>Monto: S/. 250.00</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<script src="assets/scripts/main.js"></script>
+<script src="assets/scripts/barradesplegable.js"></script>
+</body>
+</html>

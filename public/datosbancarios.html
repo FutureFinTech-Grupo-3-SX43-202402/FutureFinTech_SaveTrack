@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaveTrack</title>
+  <link rel="stylesheet" href="assets/styles/datosbancarios.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="bank-data">
+  <h2>Datos Bancarios</h2>
+  <hr>
+
+  <select id="card-options">
+    <option>Tarjetas disponibles</option>
+    <option>Visa</option>
+    <option>MasterCard</option>
+    <option>American Express</option>
+  </select>
+
+  <div class="credit-card">
+    <div class="card-header">
+      <span>Tarjeta Débito</span>
+      <img src="assets/images/chip.png" alt="Chip" class="card-chip">
+    </div>
+    <div class="card-number">1234 5678 9123 4567</div>
+    <div class="card-name">NOMBRE </div>
+    <div class="card-valid-dates">CVV<br>00/00</div>
+  </div>
+
+  <div class="card-info">
+    <label>Titular:</label>
+    <input type="text" placeholder="Nombre del titular">
+
+    <label>Número:</label>
+    <input type="text" placeholder="xxxx-xxxx-xxxx-xxxx">
+
+    <label>Moneda:</label>
+    <select>
+      <option value="usd">USD</option>
+      <option value="eur">EUR</option>
+      <option value="mxn">MXN</option>
+      <option value="pe">PEN</option>
+    </select>
+
+    <label>Fecha caducidad:</label>
+    <input type="text" placeholder="MM/AA">
+
+    <label>CVV:</label>
+    <input type="text" placeholder="xxx">
+  </div>
+
+  <a href="registrosDinero.html">
+    <button>Actualizar</button>
+  </a>
+
+  <a href="index2.html" class="back-to-home">
+    <i class="fas fa-home"></i>
+  </a>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/registro.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <title>Registro</title>
+</head>
+<body>
+<div class="container">
+  <form class="signup-form" action="index2.html" method="GET">
+    <h2>Registro</h2>
+    <div class="input-field">
+      <input type="text" id="username" required>
+      <label for="username">Usuario</label>
+    </div>
+    <div class="input-field">
+      <input type="email" id="email" required>
+      <label for="email">Email</label>
+    </div>
+    <div class="input-field">
+      <input type="password" id="password" required>
+      <label for="password">Contraseña</label>
+      <i class="toggle-password" id="togglePassword">👁️</i>
+    </div>
+    <div class="input-field">
+      <input type="password" id="confirm-password" required>
+      <label for="confirm-password">Confirmar Contraseña</label>
+      <i class="toggle-password" id="toggleConfirmPassword">👁️</i>
+    </div>
+    <button type="submit">Registrarse</button>
+    <div class="links">
+      <a href="login.html">Ya tienes una cuenta? Ingresa aquí</a>
+    </div>
+
+    <a href="index.html" class="back-to-home">
+      <i class="fas fa-home"></i>
+    </a>
+
+  </form>
+</div>
+
+<script src="assets/scripts/registro.js"></script>
+</body>
+</html>

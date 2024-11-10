@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(100deg, #424E7D, #5325d32f);
+}
+
+.container {
+    width: 350px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.input-field input:focus {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-field input:focus + label,
+.input-field input:valid + label {
+    top: -10px;
+    left: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #424E7D;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #5563c1;
+    transform: scale(1.05);
+}
+
+.back-to-home {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.back-to-home:hover {
+    color: #ddd;
+}

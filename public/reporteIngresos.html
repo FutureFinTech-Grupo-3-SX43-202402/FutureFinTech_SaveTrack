@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaveTrack</title>
+  <link rel="stylesheet" href="assets/styles/reporteIngresos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <a href="" class="logo">SaveTrack</a>
+  <nav class="navbar">
+
+    <div class="notificaciones" id="notificaciones">
+      <div class="notificacion-item">
+        <p>Nueva actualización de objetivos disponible.</p>
+        <span>Hace 5 minutos</span>
+      </div>
+      <div class="notificacion-item">
+        <p>Tu plan de ahorro ha alcanzado el 50% del objetivo.</p>
+        <span>Hace 1 hora</span>
+      </div>
+      <div class="notificacion-item">
+        <p>La sección de finanzas ha sido actualizada.</p>
+        <span>Ayer</span>
+      </div>
+      <div class="notificacion-item">
+        <p>Consulta nuestros nuevos planes de suscripción.</p>
+        <span>Hace 2 días</span>
+      </div>
+    </div>
+
+    <a href="index2.html">Inicio</a>
+    <a href="objetivos.html">Objetivos</a>
+
+    <!-- Ahorro desplegable -->
+    <div class="dropdown">
+      <a href="#" onclick="toggleDropdown()">Ahorro</a>
+      <div class="dropdown-content" id="ahorroDropdown">
+        <a href="datosbancarios.html">Datos Bancarios</a>
+        <a href="registrosDinero.html">Registros</a>
+      </div>
+    </div>
+
+    <!-- Finanzas desplegable -->
+    <div class="dropdown">
+      <a href="#" onclick="toggleDropdown()">Finanzas</a>
+      <div class="dropdown-content" id="finanzasDropdown">
+        <a href="reporteIngresos.html">Reporte de Ingresos</a>
+        <a href="reporteGastos.html">Reporte de Gastos</a>
+      </div>
+    </div>
+
+    <a href="blog.html">Nosotros</a>
+    <a href="ajustes.html"><i class="fas fa-cog"></i></a>
+    <a href="#"><i class="fas fa-bell"></i></a>
+    <a href="informacion.html"><i class="fas fa-user"></i></a>
+  </nav>
+</header>
+
+<!-- Contenedor principal del gráfico -->
+<div class="container">
+  <h2>Reporte de Ingresos</h2>
+  <label for="periodo">Periodo:</label>
+  <select id="periodo">
+    <option>Mensual</option>
+    <option>Trimestral</option>
+    <option>Semestral</option>
+    <option>Anual</option>
+  </select>
+  <label for="categorias">Categorías a mostrar:</label>
+  <select id="categorias">
+    <option value="1">Categoría 1</option>
+    <option value="2">Categoría 2</option>
+  </select>
+  <canvas id="incomeChart"></canvas>
+</div>
+
+<script src="assets/scripts/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="assets/scripts/reporteIngresos.js"></script>
+<script src="assets/scripts/barradesplegable.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaveTrack</title>
+  <link rel="stylesheet" href="assets/styles/informacion.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<main class="main-content">
+  <div class="seccion-perfil">
+    <h2>Información Personal</h2>
+    <p>Información cifrada de extremo a extremo</p>
+    <div class="formulario-informacion">
+      <form action="index2.html" method="GET">
+        <div class="grupo-formulario">
+          <label>Imagen de perfil</label>
+          <input type="file" id="imagen-perfil" name="imagen-perfil" />
+        </div>
+
+        <div class="grupo-formulario">
+          <label>Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" />
+        </div>
+
+        <div class="grupo-formulario">
+          <label>Apellidos</label>
+          <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos" />
+        </div>
+
+        <div class="grupo-formulario">
+          <label>Correo Electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="Escribe tu correo electrónico" />
+        </div>
+
+        <div class="grupo-formulario">
+          <label>Contraseña</label>
+          <input type="password" id="contrasena" name="contrasena" placeholder="Escribe tu contraseña" />
+        </div>
+
+        <div class="grupo-formulario">
+          <label>Fecha de Nacimiento</label>
+          <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" />
+        </div>
+
+        <div class="grupo-formulario">
+          <label>Género</label>
+          <select id="genero" name="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="grupo-formulario">
+          <label>Privacidad</label>
+          <select id="privacidad" name="privacidad">
+            <option value="activo">Activo</option>
+            <option value="inactivo">Inactivo</option>
+          </select>
+        </div>
+
+        <button type="submit" class="boton-aplicar">Aplicar</button>
+
+        <a href="index2.html" class="back-to-home">
+          <i class="fas fa-home"></i>
+        </a>
+
+      </form>
+    </div>
+  </div>
+</main>
+</body>
+</html>

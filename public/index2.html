@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaveTrack</title>
+  <link rel="stylesheet" href="assets/styles/styles2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <a href="" class="logo">SaveTrack</a>
+  <nav class="navbar">
+
+    <div class="notificaciones" id="notificaciones">
+      <div class="notificacion-item">
+        <p>Nueva actualización de objetivos disponible.</p>
+        <span>Hace 5 minutos</span>
+      </div>
+      <div class="notificacion-item">
+        <p>Tu plan de ahorro ha alcanzado el 50% del objetivo.</p>
+        <span>Hace 1 hora</span>
+      </div>
+      <div class="notificacion-item">
+        <p>La sección de finanzas ha sido actualizada.</p>
+        <span>Ayer</span>
+      </div>
+      <div class="notificacion-item">
+        <p>Consulta nuestros nuevos planes de suscripción.</p>
+        <span>Hace 2 días</span>
+      </div>
+    </div>
+
+    <a href="index2.html">Inicio</a>
+    <a href="objetivos.html">Objetivos</a>
+
+    <!-- Ahorro desplegable -->
+    <div class="dropdown">
+      <a href="#" onclick="toggleDropdown()">Ahorro</a>
+      <div class="dropdown-content" id="ahorroDropdown">
+        <a href="datosbancarios.html">Datos Bancarios</a>
+        <a href="registrosDinero.html">Registros</a>
+      </div>
+    </div>
+
+    <!-- Finanzas desplegable -->
+    <div class="dropdown">
+      <a href="#" onclick="toggleDropdown()">Finanzas</a>
+      <div class="dropdown-content" id="finanzasDropdown">
+        <a href="reporteIngresos.html">Reporte de Ingresos</a>
+        <a href="reporteGastos.html">Reporte de Gastos</a>
+      </div>
+    </div>
+
+    <a href="blog.html">Nosotros</a>
+    <a href="ajustes.html"><i class="fas fa-cog"></i></a>
+    <a href="#"><i class="fas fa-bell"></i></a>
+    <a href="informacion.html"><i class="fas fa-user"></i></a>
+  </nav>
+</header>
+
+<main>
+  <!--Sección Banner-->
+  <section class="Banner">
+    <div class="lp">
+      <img src="assets/images/principal.jpg"  class="imgBanner" alt="">
+    </div>
+  </section>
+
+  <!--Sección Descripciones-->
+  <section class="Descripciones">
+    <div class="container">
+      <div class="Subdescription">
+        <h2>La base del éxito está en tu compromiso</h2>
+      </div>
+      <div class="wrapper">
+        <div class="card_area">
+          <div class="card">
+            <img src="assets/images/imagen 1.avif" alt="">
+            <div class="overlay">
+              <h3>Autonomía</h3>
+              <p>
+                Ofrecemos herramientas para ayudarte a establecer tus metas financieras claras,
+                monitorear tu progreso y guiarte en el camino del ahorro y autonomía.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/imagen 2.jpg" alt="">
+            <div class="overlay">
+              <h3>Estrategia</h3>
+              <p>
+                Pequeños ahorros, grandes logros. Haz crecer tu dinero de forma inteligente y
+                sostenible, con estrategias personalizadas para cada etapa de tu vida.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/imagen 3.avif" alt="">
+            <div class="overlay">
+              <h3>Estabilidad</h3>
+              <p>
+                Toma el control de tus finanzas. Obtén consejos personalizados para optimizar
+                tus finanzas y mantener un equilibrio financiero saludable en todo momento.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Sección Premium-->
+  <section class="promocion">
+    <div class="tarjetaPromocion">
+      <div class="iconoPromocion">
+        <img src="assets/images/Premium.png" alt="">
+      </div>
+      <div class="textoPromocion">
+        <h1 class="tituloPromocion">10% OFF<br>EN<br>NUESTROS<br>PLANES</h1>
+        <button class="botonPromocion">Comprar aquí</button>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer>
+    <div class="contenido-footer">
+      <!-- Redes sociales -->
+      <div class="redes-sociales">
+        <a href="#"><img src="assets/images/facebook-new.png" alt=""></a>
+        <a href="#"><img src="assets/images/instagram-new.png" alt=""></a>
+        <a href="#"><img src="assets/images/x-new.png" alt=""></a>
+      </div>
+
+      <!-- Políticas legales -->
+      <div class="politicas-legales">
+        <p><strong>Políticas legales</strong></p>
+        <p>Política de privacidad</p>
+        <p>Términos y condiciones</p>
+        <p>Política de cookies</p>
+        <p>Aviso legal</p>
+      </div>
+
+      <!-- Información de contacto -->
+      <div class="informacion-contacto">
+        <p><strong>Información de contacto</strong></p>
+        <p>Email: savetrack@gmail.com</p>
+        <p>Teléfono: +123 4567</p>
+        <p>Día de atención: Lunes a Viernes</p>
+      </div>
+
+      <!-- Comunidad -->
+      <div class="comunidad">
+        <p><strong>Comunidad</strong></p>
+        <p>Blog</p>
+        <p>Foro de usuarios</p>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="parte-inferior-footer">
+      <small>Copyright &copy; 2024</small>
+    </div>
+  </footer>
+</main>
+
+<script src="assets/scripts/main.js"></script>
+<script src="assets/scripts/barradesplegable.js"></script>
+
+</body>
+</html>

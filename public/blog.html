@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaveTrack</title>
+  <link rel="stylesheet" href="assets/styles/blog.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <a href="" class="logo">SaveTrack</a>
+  <nav class="navbar">
+
+    <div class="notificaciones" id="notificaciones">
+      <div class="notificacion-item">
+        <p>Nueva actualización de objetivos disponible.</p>
+        <span>Hace 5 minutos</span>
+      </div>
+      <div class="notificacion-item">
+        <p>Tu plan de ahorro ha alcanzado el 50% del objetivo.</p>
+        <span>Hace 1 hora</span>
+      </div>
+      <div class="notificacion-item">
+        <p>La sección de finanzas ha sido actualizada.</p>
+        <span>Ayer</span>
+      </div>
+      <div class="notificacion-item">
+        <p>Consulta nuestros nuevos planes de suscripción.</p>
+        <span>Hace 2 días</span>
+      </div>
+    </div>
+
+    <a href="index2.html">Inicio</a>
+    <a href="objetivos.html">Objetivos</a>
+
+    <!-- Ahorro desplegable -->
+    <div class="dropdown">
+      <a href="#" onclick="toggleDropdown()">Ahorro</a>
+      <div class="dropdown-content" id="ahorroDropdown">
+        <a href="datosbancarios.html">Datos Bancarios</a>
+        <a href="registrosDinero.html">Registros</a>
+      </div>
+    </div>
+
+    <!-- Finanzas desplegable -->
+    <div class="dropdown">
+      <a href="#" onclick="toggleDropdown()">Finanzas</a>
+      <div class="dropdown-content" id="finanzasDropdown">
+        <a href="reporteIngresos.html">Reporte de Ingresos</a>
+        <a href="reporteGastos.html">Reporte de Gastos</a>
+      </div>
+    </div>
+
+    <a href="blog.html">Nosotros</a>
+    <a href="ajustes.html"><i class="fas fa-cog"></i></a>
+    <a href="#"><i class="fas fa-bell"></i></a>
+    <a href="informacion.html"><i class="fas fa-user"></i></a>
+  </nav>
+</header>
+
+<main class="content">
+  <section class="blog-section">
+    <h1>BLOG Y CONSEJOS</h1>
+    <div class="blog-image">
+      <img src="assets/images/blog.jpeg" alt="Imagen principal del blog">
+    </div>
+    <div class="blog-content">
+      <h2>Cómo establecer objetivos financieros realistas de manera inteligente</h2>
+      <p>Alcanzar la estabilidad financiera no sucede de la noche a la mañana. Requiere planificación, paciencia y, sobre todo, objetivos claros.
+        Sin embargo, muchas personas se sienten abrumadas por la idea de fijarse metas económicas, especialmente cuando las circunstancias pueden
+        cambiar con el tiempo. ¿La clave? Establecer objetivos financieros realistas que te permitan avanzar sin perder el rumbo ni frustrarte en
+        el camino.</p>
+
+      <h2>Define tus prioridades</h2>
+      <p>Antes de siquiera pensar en números o plazos, lo primero que debes hacer es preguntarte: ¿Qué es lo que realmente quiero lograr? Tal vez tu
+        objetivo a corto plazo sea eliminar deudas o reunir un fondo de emergencia. Quizá estés pensando en metas a largo plazo, como ahorrar para
+        el retiro o comprar una casa. Sea lo que sea, el primer paso es tener claras tus prioridades. Esto te permitirá concentrarte en lo que
+        verdaderamente importa y evitar distracciones.</p>
+
+      <h2>Ajusta tus metas según tu presupuesto</h2>
+      <p>Uno de los errores más comunes es establecer metas demasiado ambiciosas que no se ajustan a nuestra realidad financiera. Para evitar esto,
+        revisa tu presupuesto mensual y determina cuánto puedes ahorrar de manera realista. Si te exiges demasiado y no puedes cumplir con tus metas,
+        es probable que te sientas frustrado y quieras abandonar el plan. En cambio, si ajustas tus expectativas a lo que puedes aportar sin comprometer
+        tu estilo de vida, el proceso será mucho más fluido y satisfactorio.</p>
+
+      <h2>Construye un Fondo de Emergencia</h2>
+      <p>Un fondo de emergencia es crucial para mantener estabilidad financiera en momentos de incertidumbre. Este fondo debería cubrir entre tres y
+        seis meses de tus gastos básicos, dándote una red de seguridad ante imprevistos. Al tener un respaldo financiero, podrás enfrentar gastos inesperados
+        sin tener que endeudarte o comprometer otros objetivos financieros. Si aún no has comenzado, establece un objetivo mensual pequeño y ve aumentando el
+        monto gradualmente a medida que adquieras el hábito de ahorrar.</p>
+
+      <h2>Determina tus gastos mensuales esenciales</h2>
+      <p>Para construir un fondo de emergencia adecuado, primero identifica tus gastos mensuales esenciales, como vivienda, alimentación, servicios públicos y transporte.
+        Estos son los gastos mínimos que necesitarías cubrir en una situación de emergencia. Calcula el total de estos gastos y multiplícalo por el número de meses que
+        deseas cubrir; este será el objetivo de tu fondo. Así, podrás tener una cifra clara y específica para tu meta de ahorro.</p>
+
+      <h2>Establece una meta de ahorro mensual</h2>
+      <p>Una vez que tengas claro el monto que necesitas ahorrar, establece una cantidad realista que puedas destinar cada mes al fondo de emergencia.
+        Aunque al principio pueda parecer pequeño, cada aporte cuenta y te acercará a tu meta de seguridad financiera. Considera automatizar este ahorro,
+        configurando una transferencia automática mensual a una cuenta separada destinada exclusivamente para emergencias.</p>
+
+      <h2>Elimina Deudas con Eficacia</h2>
+      <p>La deuda puede ser una barrera importante para el logro de tus metas financieras. Con un plan estructurado, puedes reducirla y finalmente eliminarla,
+        lo que te permitirá liberar recursos para ahorrar o invertir. Priorizar el pago de deudas es clave para construir una base financiera sólida y reducir
+        el estrés asociado con los pagos mensuales. Haz un plan, sé constante y celebra cada avance para mantener la motivación.</p>
+
+      <h2>Haz una lista de todas tus deudas</h2>
+      <p>Comienza por hacer una lista completa de tus deudas, incluyendo el saldo pendiente, la tasa de interés y los pagos mínimos mensuales. Esto te permitirá
+        entender tu situación y establecer un orden de prioridades. Puedes optar por la estrategia de "avalancha" (pagar primero las deudas con la mayor tasa de interés)
+        o "bola de nieve" (pagar primero las deudas más pequeñas) según lo que mejor funcione para ti psicológica y financieramente.</p>
+
+      <h2>Considera la estrategia de la bola de nieve</h2>
+      <p>La estrategia de la bola de nieve implica pagar primero la deuda con el saldo más bajo, mientras sigues cumpliendo con los pagos mínimos de las demás.
+        A medida que eliminas cada deuda, redirige esos pagos a la siguiente, creando un efecto de "bola de nieve" que acelera el proceso. Este método suele
+        ser motivador, ya que verás resultados más rápidos y tendrás pequeñas "victorias" a lo largo del camino.</p>
+
+      <h2>Invierte para tu Futuro</h2>
+      <p>Invertir es una de las maneras más efectivas de hacer crecer tu dinero y alcanzar metas a largo plazo, como la jubilación o la compra de una vivienda.
+        Al poner tu dinero a trabajar, puedes aprovechar el interés compuesto y aumentar tu capital con el tiempo. Es importante recordar que las inversiones
+        conllevan riesgos, por lo que es crucial educarse y comprender en qué estás invirtiendo antes de comenzar.</p>
+
+      <h2>Define tu perfil de inversión</h2>
+      <p>Antes de comenzar a invertir, identifica tu perfil de riesgo: conservador, moderado o agresivo. Este perfil dependerá de tu tolerancia al riesgo y
+        del plazo en el que deseas ver resultados. Un perfil conservador buscará estabilidad y menor riesgo, mientras que uno agresivo puede soportar más
+        volatilidad a cambio de mayores retornos potenciales. Comprender tu perfil de inversión te ayudará a tomar decisiones alineadas con tus objetivos y
+        tranquilidad.</p>
+
+      <h2>Diversifica tus inversiones</h2>
+      <p>Para minimizar el riesgo, diversifica tus inversiones en diferentes activos, como acciones, bonos e inmuebles. De esta manera, reduces el
+        impacto de la volatilidad de un solo activo en tu portafolio total. La diversificación es clave para mantener estabilidad en tiempos de incertidumbre
+        y maximizar tus oportunidades de crecimiento a largo plazo.</p>
+
+      <h2>Planifica para la Jubilación</h2>
+      <p>La jubilación puede parecer lejana, pero cuanto antes comiences a planificar, más fácil será alcanzar una vejez cómoda. La planificación anticipada te
+        permitirá acumular fondos suficientes para mantener tu estilo de vida sin depender exclusivamente de pensiones o ayudas. Este proceso puede comenzar con
+        pequeñas aportaciones y, conforme crezcan tus ingresos, ir aumentando tus contribuciones.</p>
+
+      <h2>Determina tus necesidades de ingresos</h2>
+      <p>Estima cuánto necesitarás al mes para mantener tu estilo de vida una vez que te jubiles. Considera los costos de vivienda, salud, entretenimiento y otros
+        gastos que puedas prever, así como un ajuste por inflación. Tener un objetivo claro de ingresos te permitirá ajustar tus ahorros e inversiones para alcanzar
+        la meta deseada de cara al futuro.</p>
+
+      <h2>Considera los beneficios fiscales de las cuentas de retiro</h2>
+      <p>Existen cuentas de retiro con beneficios fiscales, como las cuentas IRA y los planes 401(k) en algunos países, que te permiten ahorrar e invertir para la
+        jubilación de manera más eficiente. Aprovechar estas herramientas no solo aumenta el valor de tus ahorros gracias a la capitalización, sino que también reduce
+        tu carga fiscal en el presente, permitiéndote ahorrar más.</p>
+
+      <h2>Establece un Presupuesto Mensual Efectivo</h2>
+      <p>Un presupuesto mensual te ayuda a controlar tus gastos y a asegurarte de que tus ingresos se utilicen de manera alineada con tus objetivos financieros. Con un
+        presupuesto bien estructurado, puedes reducir gastos innecesarios y aumentar tus ahorros. Esto es clave para cualquier meta financiera, ya que un control adecuado
+        de tus ingresos y gastos te permite hacer un seguimiento efectivo.</p>
+
+      <h2>Categoriza tus gastos</h2>
+      <p>Divide tus gastos en categorías, como vivienda, alimentación, transporte, entretenimiento y ahorro. Esto te dará una visión clara de a dónde va tu dinero y en
+        qué áreas podrías hacer ajustes. Una vez que conozcas tus patrones de gasto, podrás tomar decisiones informadas para reducir los gastos innecesarios y redirigir
+        esos recursos hacia tus metas.</p>
+
+      <h2>Automatiza tus ahorros</h2>
+      <p>Configura transferencias automáticas para que una parte de tu ingreso se destine a ahorros o inversiones cada mes. Automatizar el proceso reduce la tentación de
+        gastar ese dinero y facilita el cumplimiento de tus objetivos. Además, al hacerlo automático, eliminas el esfuerzo consciente de "recordar ahorrar", lo que
+        facilita la creación de un hábito sólido de ahorro.</p>
+    </div>
+
+    <div class="videoFinanciero">
+      <video width="1120" height="700" controls>
+        <source src="assets/images/EducaciónFinanciera.mp4" type="video/mp4">
+      </video>
+    </div>
+
+  </section>
+</main>
+
+<script src="assets/scripts/main.js"></script>
+<script src="assets/scripts/barradesplegable.js"></script>
+
+</body>
+</html>

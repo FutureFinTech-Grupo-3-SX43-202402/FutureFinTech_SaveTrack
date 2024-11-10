@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaveTrack</title>
+  <link rel="stylesheet" href="assets/styles/objetivos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <a href="" class="logo">SaveTrack</a>
+  <nav class="navbar">
+
+    <div class="notificaciones" id="notificaciones">
+      <div class="notificacion-item">
+        <p>Nueva actualización de objetivos disponible.</p>
+        <span>Hace 5 minutos</span>
+      </div>
+      <div class="notificacion-item">
+        <p>Tu plan de ahorro ha alcanzado el 50% del objetivo.</p>
+        <span>Hace 1 hora</span>
+      </div>
+      <div class="notificacion-item">
+        <p>La sección de finanzas ha sido actualizada.</p>
+        <span>Ayer</span>
+      </div>
+      <div class="notificacion-item">
+        <p>Consulta nuestros nuevos planes de suscripción.</p>
+        <span>Hace 2 días</span>
+      </div>
+    </div>
+
+    <a href="index2.html">Inicio</a>
+    <a href="objetivos.html">Objetivos</a>
+
+    <!-- Ahorro desplegable -->
+    <div class="dropdown">
+      <a href="#" onclick="toggleDropdown()">Ahorro</a>
+      <div class="dropdown-content" id="ahorroDropdown">
+        <a href="datosbancarios.html">Datos Bancarios</a>
+        <a href="registrosDinero.html">Registros</a>
+      </div>
+    </div>
+
+    <!-- Finanzas desplegable -->
+    <div class="dropdown">
+      <a href="#" onclick="toggleDropdown()">Finanzas</a>
+      <div class="dropdown-content" id="finanzasDropdown">
+        <a href="reporteIngresos.html">Reporte de Ingresos</a>
+        <a href="reporteGastos.html">Reporte de Gastos</a>
+      </div>
+    </div>
+
+    <a href="blog.html">Nosotros</a>
+    <a href="ajustes.html"><i class="fas fa-cog"></i></a>
+    <a href="#"><i class="fas fa-bell"></i></a>
+    <a href="informacion.html"><i class="fas fa-user"></i></a>
+  </nav>
+</header>
+
+<main class="main-content">
+  <section class="metas-container">
+    <h2>Metas</h2>
+    <div class="metas-info">
+      <p>Metas activas: 8</p>
+      <p>Metas inactivas: 0</p>
+      <p>Tiempo activo: 45 días</p>
+      <p>Progreso al: 45 %</p>
+    </div>
+  </section>
+
+  <section class="crear-meta">
+    <h2>Crear meta</h2>
+    <form>
+      <div class="input-field">
+        <label for="nombre-meta">Nombre de meta:</label>
+        <input type="text" id="nombre-meta" placeholder="Ahorro para vacaciones" required>
+      </div>
+      <div class="input-field">
+        <label for="monto-meta">Monto objetivo:</label>
+        <input type="number" id="monto-meta" placeholder="1000" required>
+      </div>
+      <div class="input-field">
+        <label for="moneda">Moneda:</label>
+        <select id="moneda" required>
+          <option value="pe">PEN</option>
+          <option value="usd">USD</option>
+          <option value="eur">EUR</option>
+          <option value="mxn">MXN</option>
+        </select>
+      </div>
+      <div class="input-field">
+        <label for="fecha-inicio">Fecha de inicio:</label>
+        <input type="date" id="fecha-inicio" required>
+      </div>
+      <div class="input-field">
+        <label for="fecha-limite">Fecha límite:</label>
+        <input type="date" id="fecha-limite" required>
+      </div>
+      <button type="submit" class="crear-btn">Crear</button>
+    </form>
+  </section>
+</main>
+
+<section class="metas-activas">
+  <h2>Metas activas</h2>
+
+  <!-- Meta 1 -->
+  <div class="meta-card">
+    <p>“Ahorro para vacaciones”</p>
+    <p>Progreso: 50%</p>
+    <p>Monto objetivo: $1000</p>
+    <p>Tiempo restante: 30 días</p>
+    <div class="progress-container">
+      <div class="progress-bar" style="width: 50%;"></div>
+      <div class="progress-text">50%</div>
+    </div>
+  </div>
+
+  <!-- Meta 2 -->
+  <div class="meta-card">
+    <p>“Cena de fin de mes”</p>
+    <p>Progreso: 75%</p>
+    <p>Monto objetivo: $200</p>
+    <p>Tiempo restante: 10 días</p>
+    <div class="progress-container">
+      <div class="progress-bar" style="width: 75%;"></div>
+      <div class="progress-text">75%</div>
+    </div>
+  </div>
+
+  <!-- Meta 3 -->
+  <div class="meta-card">
+    <p>“Fondo de emergencia”</p>
+    <p>Progreso: 40%</p>
+    <p>Monto objetivo: $5000</p>
+    <p>Tiempo restante: 60 días</p>
+    <div class="progress-container">
+      <div class="progress-bar" style="width: 40%;"></div>
+      <div class="progress-text">40%</div>
+    </div>
+  </div>
+
+  <!-- Meta 4 -->
+  <div class="meta-card">
+    <p>“Nuevo teléfono”</p>
+    <p>Progreso: 20%</p>
+    <p>Monto objetivo: $1200</p>
+    <p>Tiempo restante: 90 días</p>
+    <div class="progress-container">
+      <div class="progress-bar" style="width: 20%;"></div>
+      <div class="progress-text">20%</div>
+    </div>
+  </div>
+
+  <!-- Meta 5 -->
+  <div class="meta-card">
+    <p>“Curso de inglés”</p>
+    <p>Progreso: 60%</p>
+    <p>Monto objetivo: $300</p>
+    <p>Tiempo restante: 45 días</p>
+    <div class="progress-container">
+      <div class="progress-bar" style="width: 60%;"></div>
+      <div class="progress-text">60%</div>
+    </div>
+  </div>
+
+  <!-- Meta 6 -->
+  <div class="meta-card">
+    <p>“Nuevo laptop”</p>
+    <p>Progreso: 10%</p>
+    <p>Monto objetivo: $2000</p>
+    <p>Tiempo restante: 120 días</p>
+    <div class="progress-container">
+      <div class="progress-bar" style="width: 10%;"></div>
+      <div class="progress-text">10%</div>
+    </div>
+  </div>
+
+  <!-- Meta 7 -->
+  <div class="meta-card">
+    <p>“Regalo de cumpleaños”</p>
+    <p>Progreso: 80%</p>
+    <p>Monto objetivo: $150</p>
+    <p>Tiempo restante: 15 días</p>
+    <div class="progress-container">
+      <div class="progress-bar" style="width: 80%;"></div>
+      <div class="progress-text">80%</div>
+    </div>
+  </div>
+
+  <!-- Meta 8 -->
+  <div class="meta-card">
+    <p>“Viaje en familia”</p>
+    <p>Progreso: 30%</p>
+    <p>Monto objetivo: $2500</p>
+    <p>Tiempo restante: 180 días</p>
+    <div class="progress-container">
+      <div class="progress-bar" style="width: 30%;"></div>
+      <div class="progress-text">30%</div>
+    </div>
+  </div>
+
+</section>
+
+<script src="assets/scripts/main.js"></script>
+<script src="assets/scripts/crearmeta.js"></script>
+<script src="assets/scripts/barradesplegable.js"></script>
+
+</body>
+</html>

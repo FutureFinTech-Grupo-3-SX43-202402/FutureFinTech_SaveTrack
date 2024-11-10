@@ -66,6 +66,46 @@ body {
     color: #FFA700;
 }
 
+/* Notificaciones */
+.notificaciones {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 300px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1000;
+}
+
+.notificacion-item {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.notificacion-item:last-child {
+    border-bottom: none;
+}
+
+.notificacion-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.notificacion-item span {
+    display: block;
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 5px;
+}
+
+.navbar a .fas.fa-bell.active + .notificaciones {
+    display: block;
+}
+
 /*Sección Descripciones - Completado*/
 
 .container{
@@ -173,7 +213,6 @@ body {
     gap: 20px;
 }
 
-/* Imagen del icono, pegada al borde izquierdo */
 .iconoPromocion {
     width: 70vw;
     max-width: 700px;
@@ -189,7 +228,6 @@ body {
     margin: 0;
 }
 
-/* Contenedor de texto y botón */
 .textoPromocion {
     flex: 1;
     display: flex;
@@ -199,7 +237,6 @@ body {
     gap: 20px;
 }
 
-/* Título de la promoción */
 .tituloPromocion {
     font-size: 6vw;
     color: #333333;
@@ -208,7 +245,6 @@ body {
     margin-left: 80px;
 }
 
-/* Botón de la promoción */
 .botonPromocion {
     padding: 30px 90px;
     font-size: 1.5vw;
@@ -363,4 +399,46 @@ footer {
         width: 60%;
         margin: auto;
     }
+}
+
+
+/* Estilos de dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    align-items: center;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(66, 78, 125, 0.1);
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.dropdown-content a {
+    margin-right: 50px;
+    color: #FCCA6B;
+    padding: 12px 20px;
+    font-family: JetBrains Mono;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dropdown-content a:hover {
+    color: #FFA700;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }

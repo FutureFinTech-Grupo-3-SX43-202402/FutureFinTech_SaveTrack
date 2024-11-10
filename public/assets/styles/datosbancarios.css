@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+    background: linear-gradient(100deg, #424E7D, #5325d32f);
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bank-data {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 450px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #FCCA6B;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+select, button, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.2);
+    color: #000;
+    margin-top: 5px;
+}
+
+select:focus, input[type="text"]:focus {
+    color: #333;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+button {
+    background-color: #424E7D;
+    color: #fff;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #5563c1;
+    transform: scale(1.05);
+}
+
+.credit-card {
+    background: linear-gradient(135deg, #1e9bd3, #0d5b89);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    margin: 15px 0;
+    font-size: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-chip {
+    width: 40px;
+}
+
+.card-number {
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+
+.card-name, .card-valid-dates {
+    font-size: 0.9em;
+}
+
+.card-info {
+    text-align: left;
+    font-size: 0.9em;
+    color: #FCCA6B;
+    margin-top: 15px;
+}
+
+.card-info label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #fff;
+}
+
+.back-to-home {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.back-to-home:hover {
+    color: #ddd;
+}
