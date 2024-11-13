@@ -261,7 +261,7 @@ footer {
     width: 80px;
     height: 80px;
     pointer-events: none;
-    cursor: default;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
