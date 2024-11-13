@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a1536fb0-8a56-414f-bcdb-4c16f5e94edb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/datosbancarios.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/datosbancarios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/informacion.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/informacion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/objetivos.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/objetivos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/registrosDinero.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/registrosDinero.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/reporteGastos.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/reporteGastos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/reporteIngresos.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/reporteIngresos.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +90,8 @@
       <updated>1730525633222</updated>
       <workItem from="1730525637920" duration="789000" />
       <workItem from="1731262207437" duration="2413000" />
-      <workItem from="1731266228267" duration="1589000" />
+      <workItem from="1731266228267" duration="2288000" />
+      <workItem from="1731469901333" duration="502000" />
     </task>
     <servers />
   </component>
