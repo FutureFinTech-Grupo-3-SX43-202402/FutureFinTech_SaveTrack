@@ -66,6 +66,47 @@ body {
     color: #FFA700;
 }
 
+/*Sección Banner*/
+
+.Banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.lp {
+    width: 100%;
+    height: auto;
+}
+
+.imgBanner {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .lp {
+        padding: 0;
+    }
+
+    .imgBanner {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .lp {
+        padding: 0;
+    }
+
+    .imgBanner {
+        height: auto;
+    }
+}
+
 /* Notificaciones */
 .notificaciones {
     display: none;
